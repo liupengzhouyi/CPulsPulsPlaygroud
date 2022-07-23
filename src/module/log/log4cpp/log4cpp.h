@@ -11,11 +11,13 @@ namespace Log4cpp {
 class Log4cpp
 {
     public:
-        Log4cpp();
+        Log4cpp(const std::string &log_info, const size_t log_level);
 
         ~Log4cpp();
 
-        void log();
+        void print_log();
+
+        void save_log();
 
         void check_log();
 
